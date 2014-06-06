@@ -104,8 +104,8 @@ keys = [
     ("Control-Mod4-k", cmd.resize((0, -0.02))),
     ("Control-Mod4-l", cmd.resize((0.02, 0))),
 
-    ("XF86AudioRaiseVolume", cmd.spawn("amixer -q set Master 2dB+ unmute")),
-    ("XF86AudioLowerVolume", cmd.spawn("amixer -q set Master 2dB- unmute")),
+    ("XF86AudioRaiseVolume", cmd.spawn("amixer -c 0 set Master 1dB+")),
+    ("XF86AudioLowerVolume", cmd.spawn("amixer -c 0 set Master 1db-")),
     ("XF86AudioMute", cmd.spawn("amixer -q set Master toggle")),
 
     ("XF86MonBrightnessUp", cmd.spawn("xbacklight -inc 10")),
