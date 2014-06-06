@@ -21,7 +21,7 @@ import pwm.state
 import pwm.worker
 
 
-restart = False
+restart = True
 
 
 def main():
